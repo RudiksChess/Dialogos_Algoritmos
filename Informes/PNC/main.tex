@@ -1,0 +1,59 @@
+\input{Configuraciones/paquetes}
+
+%--------------------------
+
+\begin{document}
+\input{Configuraciones/nombres}
+%--------------------------
+
+A continuación se presenta un breve resumen respecto a la organización de los datos proporcionados por la PNC y su respectiva manipulación hasta el momento. 
+
+\section{Datos}
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.4]{Images/1}
+	\caption{Adjunto en reporte.xlsx}
+	\label{image:1}
+\end{figure}
+
+\begin{itemize}
+	\item Los datos procesados y consolidados se encuentran en esta carpeta de Google Drive:\textbf{
+	\href{https://drive.google.com/drive/folders/1wrUz2HQ4ot9iP2RcIvtUg_z284M36j6b?usp=sharing}{archivos}}. Dichos datos son los siguientes: 
+	% Please add the following required packages to your document preamble:
+	% \usepackage{booktabs}
+	\begin{table}[H]
+		\centering
+		\caption{Datos analizados}
+		\label{tab:datos}
+		\begin{tabular}{@{}llllll@{}}
+			&                       &                         & Archivos             &                         &                         \\ \midrule
+			\multicolumn{1}{l|}{1} & Armas incautadas      & \multicolumn{1}{l|}{8}  & Motos recuperadas    & \multicolumn{1}{l|}{16} & Secuestros              \\
+			\multicolumn{1}{l|}{2} & Armas robadas         & \multicolumn{1}{l|}{9}  & Motos robadas        & \multicolumn{1}{l|}{17} & Turistas                \\
+			\multicolumn{1}{l|}{3} & Artefactos explosivos & \multicolumn{1}{l|}{10} & Muertes otras causas & \multicolumn{1}{l|}{18} & Vehículos recuperados   \\
+			\multicolumn{1}{l|}{4} & Buses                 & \multicolumn{1}{l|}{11} & Patrimonio I         & \multicolumn{1}{l|}{19} & Vehículos robados       \\
+			\multicolumn{1}{l|}{5} & Delitos sexuales      & \multicolumn{1}{l|}{12} & Patrimonio II        & \multicolumn{1}{l|}{20} & Vida                    \\
+			\multicolumn{1}{l|}{6} & Desaparecidos         & \multicolumn{1}{l|}{13} & Peatones             & \multicolumn{1}{l|}{21} & Violencia intrafamiliar \\
+			\multicolumn{1}{l|}{7} & Detenidos             & \multicolumn{1}{l|}{14} & Remitidos            & \multicolumn{1}{l|}{}   &                         \\
+			\multicolumn{1}{l|}{8} & Motos recuperadas     & \multicolumn{1}{l|}{15} & Retenidos            & \multicolumn{1}{l|}{}   &                        
+		\end{tabular}
+	\end{table}
+	\item Los datos, sin embargo, presentaban varios meses faltantes, los cuales se observan en \ref{image:1}. Donde las \textbf{X} representan los meses faltantes. Este cuadro se adjunta con los archivos anteriores en el archivo de \textbf{Reporte.xlsx}. 
+	
+	\subsection{Tratamiento}
+	El tratamiento de los datos consistió en lo siguiente:
+	\begin{itemize}
+		\item Consolidación de las bases de datos del 2016 hasta la actualidad. 
+		\item Eliminación de datos duplicados (preservando el más reciente). 
+		\item Eliminación de columnas duplicadas. 
+		\item Limpieza de datos general. 
+	\end{itemize}
+	
+\end{itemize}
+
+
+
+
+%---------------------------
+
+
+\end{document}
